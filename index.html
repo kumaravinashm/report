@@ -1,176 +1,326 @@
-<!DOCTYPE html>
-<!--
-	Shine by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Shine - Responsive Template | Template Stock</title>
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		
-		<!-- WEB FONTS -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-		
-		<!-- BOOTSTRAP -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!-- FONT AWESOME -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- CUSTOM STYLING -->
-		<link href="css/styles.css" rel="stylesheet">
-		<!-- PRELOADER -->	
-		<link href="css/loader.css" rel="stylesheet">
-			
-	</head>
-	
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<title>LexiHMS:  A Hospital & Clinic Management Software by Lexicon Consultants Pvt. Ltd</title>
+
+
+
+<style type="text/css">
+/* Styles go here */
+.page-header-print, .page-footer-print, .page-header-space, .page-footer-space{ display: none; visibility: hidden; }
+.page-header-new{
+font-size: 12px;
+line-height: normal;
+color: #000;
+padding-bottom: 0.5rem;
+/**
+height: 296px;
+margin-top: 52px;**/
+border-bottom: 1px solid #bdbdbd;
+}
+.page-header-new table td, .page-header-print table td{padding: 2px 5px; font-size: 14px;}
+
+.page-footer{
+height: 95px;
+border-top: 1px solid #dcdcdc;
+padding: 5px 0 0;
+margin: 1rem auto 0;
+width: 90%;
+
+}
+.page-header-new p{
+margin: 0 0 5px;
+}
+
+.page {
+page-break-after: always;
+margin: 1rem 0;
+/**position: relative;
+top: 0;**/
+}
+.billing-table{
+border: 1px solid #d2d0d0;
+}
+.billing-table tbody td{padding: 29px 5px;}
+.billing-table td, .billing-table th{
+padding: 1px 5px;
+}
+.bank-dtail{
+margin: 20px 0 0;
+}
+.GP-table{
+width: 91%; margin: 0 auto;
+}
+.GP-table tr th{padding: 0.1rem 1rem; border: 1px solid #dcdcdc;}
+.GP-table tbody tr td{
+border: 1px solid #f3f3f3;
+padding: 0.1rem 1rem;
+}
+.bank-dtail td p, .billing-table th p{ margin: 0; }
+@page {
+font-size: 14px;
+}
+
+@media print {
+/** .cf-header{
+position: fixed;
+top: 0;
+border-bottom: 1px solid #679782;
+padding: 0 0 3px;
+width: 578px;
+margin: 0 auto;
+left: 0;
+right: 0;
+}**/
+/**.cf-sign{
+position: absolute;
+bottom: 194px;
+left: 50%;
+width: 573px;
+margin: 0 0 0 -286.5px;
+}
+.cf-footer{
+padding: 20px 0;
+margin: 0 0 0 -286.5px;
+border-top: 2px solid #679782;
+position: absolute;
+left: 50%;
+bottom: 0;
+width: 573px;
+}**/
+.page-footer {
+position: fixed;
+width: 90%;
+margin: 0 auto;
+left: 0;
+right: 0;
+bottom: 0;
+height: auto;
+text-align: center;
+}
+.page-footer-space{
+display: block;
+height: 95px;
+}
+
+table.special thead {display: table-header-group;}
+table.special tfoot {display: table-footer-group;}
+
+button {display: none; visibility: hidden;}
+
+body {margin: 0;}
+}
+</style>
+</head>
 <body>
-	<!-- PRELOADER -->
-		<div id="loader-wrapper">
-			<div id="loader"><div class="sk-spinner sk-spinner-cube-grid"><div class="sk-cube"></div><div class="sk-cube"></div><div class="sk-cube"></div><div class="sk-cube"></div><div class="sk-cube"></div><div class="sk-cube"></div><div class="sk-cube"></div><div class="sk-cube"></div><div class="sk-cube"></div></div></div>
-		</div>	
-		
-	<!-- HEADER -->
-		<section id="header">
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-md-8">
-						<img class="logo" src="images/logo.png" />
-						<h1 class="white-text">Welcome Template Stock</h1>
-						<h5 class="white-text">Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt.</h5>
-						<div id="countdown" class="white-text"></div>
-					</div>
-				</div>
-			</div>
-			<div class="animation">
-			<a class="arrow-down-animation" data-scroll href="#about"><i class="fa fa-angle-down"></i></a>
-			</div>
-		</section>
-	<!-- HEADER ENDS -->
-		
-	<!-- ABOUT -->
-		<section id="about">
-			<div class="container">
-				<div class="row text-center">
-					<!-- Section 1 -->
-					<div data-sr="enter top over 1s, wait 0.3s, move 24px, reset" class="col-md-4">
-						<i class="fa fa-laptop"></i>
-						<h3>Responsive Design</h3>
-						<div class="colored-line-small-center"></div>
-						<p>Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-					</div>
-					<!-- Section 2 -->
-					<div data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" class="col-md-4 middle">
-						<i class="fa fa-lightbulb-o"></i>
-						<h3>Creative Design</h3>
-						<div class="colored-line-small-center"></div>						
-						<p>Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.</p>						
-					</div>
-					<!-- Section 3 -->
-					<div data-sr="enter top over 1s, wait 0.3s, move 24px, reset" class="col-md-4">
-						<i class="fa fa-newspaper-o"></i>
-						<h3>Mailchimp Ready</h3>
-						<div class="colored-line-small-center"></div>
-						<p>Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.</p>						
-					</div>
-				</div>
-			</div>			
-		</section>
-	<!-- ABOUT ENDS -->
-	
-	<!-- SUBSCRIBE -->
-		<section id="subscribe">
-			<div class="container">
-				<i data-sr="ease-in over 1s, reset" class="fa fa-envelope icontop"></i>
-				<div class="row text-center">
-					<div class="col-md-8 col-md-offset-2">
-						<h2 data-sr="enter top over 1s, wait 0.3s, move 24px, reset" class="white-text">Sign up to our Newsletter</h2>
-						<h5 data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" class="white-text">Stay up2date with climb-up</h5>
-						<!-- MAILCHIMP FORM -->
-						<form id="mc_form" role="form">
-							<input data-sr="enter top over 1s, wait 0.3s, move 24px, reset" type="email" class="form-control" id="mc-email" name="mc-email" placeholder="Your Email" />
-							<button data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" type="submit" class="button-leweb">Submit</button>
-							<label for="mc-email" class="mc-email"></label>
-						</form>
-						<!-- MAILCHIMP FORM ENDS -->
-					</div>
-				</div>
-			</div>	
-		</section>
-	<!-- SUBSCRIBE ENDS -->
-	
-	<!-- CONTACT US -->
-		<section id="contact">
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-md-8 col-md-offset-2">
-						<!-- CONTACT FORM -->
-						<form method="post" action="">
-							<p data-sr="enter top over 1s, wait 0.3s, move 24px, reset" class="contact-info text-center">Get in Contact. Fill up the form below. All fields are required.</p>
-							<div data-sr="enter left over 1s, wait 0.3s, move 24px, reset" class="form-group col-md-6">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" />
-							</div>
-							<div data-sr="enter right over 1s, wait 0.3s, move 24px, reset" class="form-group col-md-6">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Your Email" />
-							</div>
-							<div data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" class="form-group col-md-12">
-								<input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" />
-							</div>
-							<div data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" class="form-group col-md-12">
-								<textarea cols="60" rows="3" id="comment" name="comment" class="form-control" placeholder="Write your comment here..."></textarea>
-							</div>
-							<div data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" class="form-group col-sm-12 ">
-								<button type="submit" class="button-leweb">Send Message</button>
-							</div>
-						</form>
-									
-						<!-- AFTER SENDING MESSAGE -->
-						<div id="success" class="col-md-12 col-sm-12 text-center">
-							<i class="fa fa-check-circle"></i>
-							<strong>Message successfully sent</strong>
-							<p>Thanks for contacting us. We will respond to you as soon as possible!</p>
-						</div>									
-						<!-- CONTACT FORM ENDS -->	
-					</div>				
-				</div>
-			</div>
-		</section>
-	<!-- CONTACT ENDS -->
-	
-	<!-- FOOTER -->
-		<footer id="footer">
-			<div class="container">
-				<div class="row text-center">	
-					<p>
-						&copy; 2016 Shine | DESIGN BY <a href="http://templatestock.co">Template Stock</a>
-						<span class="social">
-							<a href="#"><i class="fa fa-facebook-square"></i></a>
-							<a href="#"><i class="fa fa-twitter-square"></i></a> 
-							<a href="#"><i class="fa fa-google-plus-square"></i></a>
-						</span>
-					</p>
-				</div>
-			</div>		
-		</footer>
-	<!-- FOOTER ENDS -->	
 
-	
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- SMOOTH SCROLL -->
-		<script src="js/smooth-scroll.min.js"></script>
-		<!-- PARALLAX IMG -->
-		<script src="js/jquery.parallax-1.1.3.js"></script>
-		<!-- SCROLL REVEAL -->
-		<script src="js/scrollReveal.min.js"></script>
-		<!-- FUNCTIONS -->
-		<script src="js/functions.js"></script>
 
+<!--print invoice page-->
+<table  class="special" width="100%" style="margin: 0 auto;">
+
+<thead>
+<tr>
+<td>
+<!--place holder for the fixed-position header-->
+<div class="page-header-space"></div>
+<div class="page-header-new" >
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td style="padding: 0;">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+        <td style="padding: 0;"  width="100%"  align="center" valign="bottom">
+            <p><img style="width: 100%;" src="https://sadarhospital.com/assets/img/sadar_header.jpg" alt="logo"></p>
+        </td>
+    </tr>
+</table>
+</td>
+</tr>
+<!--tr>
+<td>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+    <tr>
+        <td align="left"><strong style="display: inline-block; width: 150px;">Date</strong> : 01/06/2020</td>
+    </tr>
+</table>
+</td>
+</tr-->
+</table>
+<table style="border-top: 0 solid #dcdcdc; margin: 8px 0 0;" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td>
+<table style="border-top: 0 solid #dcdcdc; margin: 8px 0 0;" width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td style="width: 1000%;"  valign="top">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td width="50%">
+                          
+                         <table width="100%" cellpadding="0" cellspacing="10" border="0">
+                           <tr>
+                             <td width="40">Name</td>
+                             <td width="5%">:</td>
+                             <td width="55%">SHYAM BIHARI PRASAD</td>
+                           </tr>
+                           <tr>
+                             <td width="40">Age</td>
+                             <td width="5%">:</td>
+                             <td width="55%">69</td>
+                           </tr>
+                           <tr>
+                             <td width="40">Gender</td>
+                             <td width="5%">:</td>
+                             <td width="55%">M</td>
+                           </tr>
+                           <tr>
+                             <td width="40">Address</td>
+                             <td width="5%">:</td>
+                             <td width="55%">DHURWA RANCHI</td>
+                           </tr>
+                         </table> 
+
+                      </td>
+                      <td width="50%">
+                        <table width="100%" cellpadding="0" cellspacing="10" border="0">
+                           <tr>
+                             <td width="40">SRF No</td>
+                             <td width="5%">:</td>
+                             <td width="55%">2033900048847</td>
+                           </tr>
+                           <!--<tr>-->
+                           <!--  <td width="40">Sample Date</td>-->
+                           <!--  <td width="5%">:</td>-->
+                           <!--  <td width="55%"></td>-->
+                           <!--</tr>-->
+                           <tr>
+                             <td width="40">Date of Testing</td>
+                             <td width="5%">:</td>
+                             <td width="55%">13-Aug-2020</td>
+                           </tr>
+                           <!--<tr>-->
+                           <!--  <td width="40">Appointment Date</td>-->
+                           <!--  <td width="5%">:</td>-->
+                           <!--  <td width="55%">15-Aug-2020</td>-->
+                           <!--</tr>-->
+                           <!--<tr>-->
+                           <!--  <td width="40">Referred by</td>-->
+                           <!--  <td width="5%">:</td>-->
+                           <!--  <td width="55%">skd</td>-->
+                           <!--</tr>-->
+                         </table> 
+                      </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="padding: 2px 10px;">
+<!--*** CONTENT GOES HERE ***-->
+<div class = "page">
+    <!--<table style="border-top: none; margin: 8px 0 0;" width="100%" cellspacing="0" cellpadding="0" border="0">-->
+    <!--    <tbody>-->
+    <!--        <tr><td>&nbsp;</td> <td>&nbsp;</td></tr>-->
+    <!--    </tbody>-->
+    <!--</table>-->
+    
+    <div class="result-table" style="margin: 3rem 0 1rem;">
+     <table width="100%" cellpadding="0" cellspacing="0" border="0">
+       <thead>
+         <tr>
+           <th align="left" width="45%">Method of Testing</th>
+           <th align="left">Result</th>
+           <!--<th align="center">Unit Range</th>-->
+           <!--<th align="center">Unit</th>-->
+           <!--<th align="left">Status</th>-->
+         </tr>
+       </thead>
+       <!--test type item-->
+        <tbody> 
+       
+        <tr>
+            <td align="left"><strong>TRUENAT</strong></td>
+            <td colspan="3">NEGATIVE</td>
+            <!--<td colspan="3">&nbsp;</td>-->
+            <!--<td colspan="3">&nbsp;</td>-->
+            <!--<td colspan="3">&nbsp;</td>-->
+        </tr>
+
+     </table>
+   </div>
+</div>
+
+
+</td>
+</tr>
+</tbody>
+
+<tfoot>
+    
+              
+  <tr>
+      <td>
+          <p style="text-align: right; margin-top:4rem;"><img style="width: 10%;" src="https://sadarhospital.com/assets/img/sign.png" alt="logo">
+  </p>
+  <p style="text-align: right; ">DR. RANJU SINHA<br>M.O SADAR HOSPITAL<br>RANCHI</p>
+</td>
+</tr>
+<tr>
+<td>
+    <div style="position: relative; margin-left: 40%;">
+        <button class="btn btn-primary" id="printing_button" onclick="printl()">Print</button>&nbsp;<a class="btn btn-danger" id="print_cancel" href="https://sadarhospital.com/">Back To Home</a>
+</div>
+<div class = "page-footer-space"></div>
+<div class = "page-footer">
+<p style="text-align: center;"><img style="width: 100%;" src="https://sadarhospital.com/assets/img/footer.jpg" alt="logo"></p>
+<!--p>©| All Rights Reserved. | Disclaimer<br>
+Powered by <a href = "http://www.lexiconconsultants.com/" id = "myToolTip" data-toggle = "tooltip" data-placement = "top" title = "Lexicon Consultants Pvt. Ltd.">Lexicon Consultants Pvt. Ltd.</a></p-->
+</div>
+</td>
+</tr>
+</tfoot>
+</table>
+<script type="text/javascript">
+        function printl()
+        {
+            var printButton = document.getElementById("printing_button");
+            var print_cancel = document.getElementById('print_cancel');
+
+            print_cancel.style.visibility = 'hidden';
+
+            printButton.style.visibility = 'hidden';
+            window.print();
+            printButton.style.visibility = 'visible';
+            print_cancel.style.visibility = 'visible';
+
+        }
+         $(document).ready(function() {
+        /*function disableBack() { window.history.forward() }
+        window.onload = disableBack();
+        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }*/
+        function preventBack(){window.history.forward();}
+        setTimeout("preventBack()", 0);
+        window.onunload=function(){null};
+    });
+    </script>
 </body>
 </html>
